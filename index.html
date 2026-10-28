@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071a22" />
+    <meta
+      name="description"
+      content="Rest&Raw Resort is a fictional high-end island world and Unreal Engine 5.7.4 creative project by HUANG Yifei and ZHAO Xuehan."
+    />
+    <meta property="og:title" content="Rest&Raw Resort — A fictional island world" />
+    <meta
+      property="og:description"
+      content="A two-level omakase retreat, a sea-view bath, and a cloud ocean alive with drifting fish."
+    />
+    <meta property="og:image" content="assets/hero-resort.png" />
+    <title>Rest&amp;Raw Resort — A fictional island world</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/hero-resort.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="project-notice" role="note">
+      <span>Fictional UE 5.7.4 creative project</span>
+      <span aria-hidden="true">·</span>
+      <span>Not a real or bookable property</span>
+    </div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Rest and Raw Resort home">
+        <img src="assets/rr-mark.svg" alt="" width="44" height="44" />
+        <span class="brand-wordmark">Rest<span>&amp;</span>Raw</span>
+        <span class="brand-descriptor">Resort</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="#story">About</a>
+        <a href="#island">Island &amp; Dining</a>
+        <a href="#cloud">Cloud Experience</a>
+        <a href="#journal">Journal</a>
+        <a href="#credits">Credits</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero-resort.png"
+          alt="AI concept visualization of a lantern-lit island retreat beside turquoise water and a cloud-filled sky"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-orbit" aria-hidden="true"><span>R&amp;R</span></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow light">An Unreal Engine world study</p>
+          <h1 id="hero-title">Come ashore.<br /><em>Leave gravity behind.</em></h1>
+          <p class="hero-copy">
+            A compact skull-shaped island. A two-level omakase retreat. A sea-view bath that opens
+            onto an ocean of clouds.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#story">Enter the world</a>
+            <a class="text-link light" href="#journal">Read the build journal <span>↘</span></a>
+          </div>
+        </div>
+        <div class="hero-meta">
+          <span>Creative direction / Hong Kong</span>
+          <span>Built in UE 5.7.4</span>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><span></span>Discover</div>
+      </section>
+
+      <section id="story" class="section story-section">
+        <div class="section-grid">
+          <div class="section-intro reveal">
+            <p class="eyebrow">01 / The premise</p>
+            <h2>A resort that exists<br />between appetite<br />and atmosphere.</h2>
+          </div>
+          <div class="story-copy reveal">
+            <p class="lead">
+              Rest&amp;Raw Resort is a fictional hospitality world: part environmental design, part
+              interactive experiment, and part dream of eating at the edge of the sea.
+            </p>
+            <p>
+              The visitor arrives by a small dock, crosses a tropical island shaped like a skull,
+              and enters a two-storey dining house. Below: aquarium light, open kitchen and quiet
+              omakase ritual. Above: a bathing room facing the horizon—and a threshold to the cloud
+              level.
+            </p>
+            <div class="fact-row" aria-label="Project facts">
+              <div><strong>01</strong><span>Island world</span></div>
+              <div><strong>02</strong><span>Connected realms</span></div>
+              <div><strong>∞</strong><span>Floating fish paths</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="island" class="section experience-section">
+        <div class="experience-head reveal">
+          <div>
+            <p class="eyebrow">02 / Island &amp; dining</p>
+            <h2>Land. Dine. Ascend.</h2>
+          </div>
+          <p>
+            A deliberately compact route keeps the architecture close to the water and the experience
+            focused: arrival, aquarium, counter, gallery, bath.
+          </p>
+        </div>
+
+        <figure class="atlas-card reveal">
+          <div class="atlas-image-wrap">
+            <img
+              src="assets/concept-island.png"
+              alt="Concept plan showing the tropical island, resort building, gardens, dock and the relationship between ground and cloud levels"
+              loading="lazy"
+            />
+            <span class="image-label">Concept atlas / ground level</span>
+          </div>
+          <figcaption>
+            <span>Skull Island</span>
+            <p>
+              Gardens occupy the island's two “eye sockets”; the dining house and dock anchor the
+              southern shore. Concept reference from the team's FigJam board; not a construction plan.
+            </p>
+          </figcaption>
+        </figure>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-number">1F</span>
+            <h3>Raw ritual</h3>
+            <p>
+              A lantern-lit lobby opens to a large aquarium, a central omakase counter, an open
+              kitchen and private dining.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">2F</span>
+            <h3>Rest, reframed</h3>
+            <p>
+              A quiet gallery leads to a sea-view bathing room—the narrative focus and planned
+              threshold to the sky.
+            </p>
+          </article>
+          <figure class="plan-card reveal">
+            <img
+              src="assets/concept-dining.png"
+              alt="Concept floor plans for the two-level dining house with aquarium, omakase counter and sea-view bath"
+              loading="lazy"
+            />
+            <figcaption>Team FigJam concept reference / AI-assisted planning visual</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="cloud" class="cloud-section" aria-labelledby="cloud-title">
+        <div class="cloud-backdrop" aria-hidden="true"></div>
+        <div class="cloud-content reveal">
+          <p class="eyebrow light">03 / Cloud experience</p>
+          <h2 id="cloud-title">Where fish swim<br />without water.</h2>
+          <p>
+            A quiet free-roaming world of layered fog, moving cloud forms and schools of fish. Walk
+            across a cloud carpet, follow their spatial audio, and catch them by touch.
+          </p>
+          <div class="cloud-status">
+            <span>Playable systems in development</span>
+            <span>Bathtub portal connection: planned</span>
+          </div>
+        </div>
+        <div class="fish fish-one" aria-hidden="true"></div>
+        <div class="fish fish-two" aria-hidden="true"></div>
+        <div class="fish fish-three" aria-hidden="true"></div>
+      </section>
+
+      <section class="section build-section" aria-labelledby="build-title">
+        <div class="build-heading reveal">
+          <p class="eyebrow">04 / Build state</p>
+          <h2 id="build-title">What is real<br />inside the fiction.</h2>
+        </div>
+        <div class="status-columns">
+          <div class="status-panel reveal">
+            <div class="status-title"><span class="status-dot live"></span>Built / tested</div>
+            <ul>
+              <li>Independent UE 5.7.4 scene development</li>
+              <li>Dynamic cloud generation and recycling</li>
+              <li>Cloud carpet and local fog</li>
+              <li>Randomly roaming fish</li>
+              <li>Touch capture, count and automatic replenishment</li>
+              <li>Distance-based fish recycling</li>
+              <li>3D fish-audio component interface</li>
+            </ul>
+          </div>
+          <div class="status-panel planned reveal">
+            <div class="status-title"><span class="status-dot"></span>Planned next</div>
+            <ul>
+              <li>Merge the island and cloud maps</li>
+              <li>Use the sea-view bath as the portal</li>
+              <li>Add a one-minute return mechanism</li>
+              <li>Refine comfort, boundaries and spatial cues</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="journal" class="section journal-section" aria-labelledby="journal-title">
+        <div class="journal-heading reveal">
+          <div>
+            <p class="eyebrow">05 / News &amp; journal</p>
+            <h2 id="journal-title">Notes from<br />the shoreline.</h2>
+          </div>
+          <p>
+            A living record of experiments, working systems and the next thresholds to cross. Dates
+            are only shown when the team has recorded them.
+          </p>
+        </div>
+
+        <div class="journal-filters reveal" role="group" aria-label="Filter journal entries">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="completed">Built</button>
+          <button class="filter-button" type="button" data-filter="planned">Planned</button>
+        </div>
+        <div id="journal-list" class="journal-list" aria-live="polite">
+          <p class="journal-loading">Loading project journal…</p>
+        </div>
+      </section>
+
+      <section id="credits" class="section credits-section">
+        <div class="credits-main reveal">
+          <p class="eyebrow light">06 / Project credits</p>
+          <h2>Built by two people.<br />Designed as another world.</h2>
+        </div>
+        <div class="credits-grid reveal">
+          <div>
+            <span>Team</span>
+            <p>HUANG Yifei <small>Peter Huang</small></p>
+            <p>ZHAO Xuehan <small>Leo Zhao</small></p>
+          </div>
+          <div>
+            <span>Production</span>
+            <p>Unreal Engine 5.7.4</p>
+            <p>Environment &amp; interaction study</p>
+          </div>
+          <div>
+            <span>Visual note</span>
+            <p>Hero: original AI-generated concept visualization.</p>
+            <p>Plans: project FigJam concept references; not real photography.</p>
+          </div>
+        </div>
+        <div class="fiction-statement reveal">
+          <span>Important</span>
+          <p>
+            Rest&amp;Raw Resort is a fictional student creative project. It is not an operating hotel,
+            restaurant or travel destination, and no reservations are accepted.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home" aria-label="Back to top">
+        <img src="assets/rr-mark.svg" alt="" width="52" height="52" />
+        <span class="brand-wordmark">Rest<span>&amp;</span>Raw</span>
+      </a>
+      <p>© <span data-year></span> HUANG Yifei &amp; ZHAO Xuehan. Fictional project.</p>
+      <a class="text-link light" href="#home">Return to the surface ↑</a>
+    </footer>
+  </body>
+</html>

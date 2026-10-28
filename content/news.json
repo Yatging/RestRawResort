@@ -1,0 +1,42 @@
+[
+  {
+    "id": "scene-foundation",
+    "date": null,
+    "dateLabel": "Date not recorded",
+    "status": "completed",
+    "eyebrow": "Environment systems",
+    "title": "The cloud world takes shape",
+    "summary": "Independent UE 5.7.4 scene development established dynamic cloud generation and recycling, a cloud carpet underfoot, and local fog for depth and orientation.",
+    "tags": ["UE 5.7.4", "Environment", "Clouds"]
+  },
+  {
+    "id": "fish-ecosystem",
+    "date": null,
+    "dateLabel": "Date not recorded",
+    "status": "completed",
+    "eyebrow": "Interaction systems",
+    "title": "A self-renewing school of fish",
+    "summary": "Fish now roam on random paths, register touch capture and update a count. Automatic replenishment keeps the world populated, while distant fish are recycled for efficiency.",
+    "tags": ["Blueprint", "Interaction", "Fish"]
+  },
+  {
+    "id": "spatial-audio-interface",
+    "date": null,
+    "dateLabel": "Date not recorded",
+    "status": "completed",
+    "eyebrow": "Spatial audio",
+    "title": "An interface for hearing where fish are",
+    "summary": "A reusable 3D fish-audio component interface is in place, preparing the project for a future listen-and-locate mode without coupling sound logic to one fish Blueprint.",
+    "tags": ["3D Audio", "Components", "Gameplay"]
+  },
+  {
+    "id": "connected-journey",
+    "date": null,
+    "dateLabel": "Planned — date not set",
+    "status": "planned",
+    "eyebrow": "Next threshold",
+    "title": "Connect the island to the cloud ocean",
+    "summary": "The two maps, bathtub portal and one-minute return mechanism remain planned work. They are not yet presented as implemented systems.",
+    "tags": ["Map merge", "Portal", "Return flow"]
+  }
+]
