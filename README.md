@@ -43,4 +43,4 @@ Journal content lives in [`content/news.json`](content/news.json). Add a new obj
 
 ## Deployment
 
-The workflow in `.github/workflows/pages.yml` deploys the repository root to GitHub Pages. In repository settings, **Pages → Build and deployment → Source** must be set to **GitHub Actions** for the first deployment.
+The workflow in `.github/workflows/pages.yml` deploys the repository root to GitHub Pages and requests first-run Pages enablement. If repository policy blocks automatic enablement, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**, then re-run the workflow.
