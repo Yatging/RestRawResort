@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
   <title id="title">R and R monogram</title>
   <desc id="desc">Two mirrored letter R forms joined by an ampersand-inspired ocean curve</desc>
-  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="none" stroke="#0b2530" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="90" cy="90" r="82" stroke-width="2" opacity=".55"/>
     <path d="M48 128V51h22c20 0 30 10 30 25 0 14-10 24-30 24H49" stroke-width="6"/>
     <path d="M71 100l31 31" stroke-width="6"/>
