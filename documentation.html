@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a22">
+  <meta name="description" content="Rest&Raw Resort: 26-page 2026 Unreal Engine 5.7.4 documentation, technical systems, build evidence and AI-assisted asset register.">
+  <meta property="og:title" content="Technical documentation — Rest&Raw Resort">
+  <title>Technical Documentation | Rest&amp;Raw Resort</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .doc-hero{background:radial-gradient(circle at 85% 15%,#24606c 0%,#102f3a 28%,#071a22 66%);color:var(--paper);padding:8rem var(--page-pad) 6rem}
+    .doc-kicker{color:var(--sand);font-size:.73rem;text-transform:uppercase;letter-spacing:.18em}
+    .doc-hero h1{font-family:var(--display);font-weight:300;letter-spacing:-.055em;font-size:clamp(3.5rem,8vw,8.5rem);line-height:1.01;max-width:1050px;margin:1.3rem 0}
+    .doc-hero h1 em{font-family:var(--serif);color:var(--sand);font-weight:500}
+    .doc-hero p{max-width:790px;color:#d2d8d2;font-size:1.08rem}
+    .doc-cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.2rem}
+    .doc-cta a{display:inline-block;padding:.85rem 1.2rem;border:1px solid rgba(255,255,255,.4);font-size:.77rem;letter-spacing:.08em}
+    .doc-cta a:first-child{color:#071a22;background:#f1eee5}
+    .doc-main{background:var(--paper);color:var(--ink);padding-bottom:6rem}
+    .doc-content{width:min(1250px,calc(100% - 2 * var(--page-pad)));margin:0 auto}
+    .doc-toc{display:flex;flex-wrap:wrap;gap:.75rem;padding:2rem 0 1rem;border-bottom:1px solid var(--line)}
+    .doc-toc a{font-size:.69rem;text-transform:uppercase;letter-spacing:.07em;padding:.45rem .7rem;border:1px solid var(--line)}
+    .doc-section{padding:5rem 0 1rem;border-bottom:1px solid var(--line)}
+    .doc-label{display:block;color:#a84e37;font-size:.7rem;text-transform:uppercase;letter-spacing:.16em;font-weight:600}
+    .doc-section h2{font-family:var(--display);font-weight:300;font-size:clamp(2.4rem,5vw,5.2rem);letter-spacing:-.05em;margin:.6rem 0 1.4rem}
+    .doc-section h3{font-family:var(--serif);font-size:1.5rem;font-weight:500;margin:0 0 .75rem}
+    .doc-lead{font-family:var(--serif);font-size:clamp(1.3rem,2vw,1.9rem);line-height:1.5;max-width:960px}
+    .doc-muted,.doc-footnote{color:#58696d}
+    .doc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:rgba(16,35,42,.14);border:1px solid rgba(16,35,42,.14);margin:2rem 0 3rem}
+    .doc-card{background:var(--paper);padding:2rem}
+    .doc-card h3{margin:.4rem 0}
+    .doc-card p{margin:.4rem 0 0}
+    .doc-tag{font-size:.65rem;letter-spacing:.11em;font-weight:600;text-transform:uppercase;color:#9d4d37}
+    .doc-system{display:flex;gap:1rem;justify-content:space-between;border-bottom:1px solid var(--line);padding:1.1rem 0}
+    .doc-system code,.doc-file-table code,.doc-note code{font-family:ui-monospace,monospace;font-size:.87em;overflow-wrap:anywhere}
+    .doc-status{white-space:nowrap;color:#126365;text-transform:uppercase;font-size:.65rem;font-weight:600;letter-spacing:.07em}
+    .doc-status.pending{color:#a84e37}
+    .doc-note{padding:1.5rem;background:var(--paper-soft);border-left:3px solid var(--sand);margin:1.7rem 0}
+    .doc-register{margin:1.8rem 0 3rem}
+    details.doc-asset{border-top:1px solid var(--line);padding:1rem 0}
+    details.doc-asset:last-child{border-bottom:1px solid var(--line)}
+    .doc-asset summary{cursor:pointer;display:flex;gap:1rem;align-items:center;justify-content:space-between;font-family:var(--serif);font-size:1.4rem}
+    .doc-asset summary span{font-family:var(--display);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#7a6460}
+    .doc-asset-body{padding:1.3rem 0 1rem}
+    .doc-file-table{width:100%;border-collapse:collapse;margin:1rem 0}
+    .doc-file-table th,.doc-file-table td{padding:.6rem;border-bottom:1px solid var(--line);text-align:left}
+    .doc-file-table td:last-child,.doc-file-table th:last-child{text-align:right;white-space:nowrap}
+    .doc-file-table th{font-size:.67rem;color:#607279;letter-spacing:.1em;text-transform:uppercase}
+    .doc-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem 1.5rem;padding:0;margin:1.7rem 0;list-style:none}
+    .doc-links li{border-bottom:1px solid var(--line);padding:.6rem 0}
+    .doc-links a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+    .doc-embed{aspect-ratio:16/9;width:100%;border:1px solid var(--line);background:#d9d5cb}
+    .doc-end{background:var(--deep);color:var(--paper);padding:2.5rem var(--page-pad)}
+    .doc-end a{text-decoration:underline}
+    @media(max-width:820px){.doc-hero{padding:6rem var(--page-pad) 3rem}.doc-grid,.doc-links{grid-template-columns:1fr}.doc-asset summary{align-items:flex-start;flex-direction:column}.doc-file-table{font-size:.78rem}.doc-content{width:calc(100% - 2 * var(--page-pad))}}
+  </style>
+</head>
+<body>
+ <a class="skip-link" href="#doc-main">Skip to content</a>
+ <div class="project-notice" role="note"><span>Fictional UE 5.7.4 creative project</span><span aria-hidden="true">·</span><span>Not a real or bookable property</span></div>
+ <header class="site-header is-fixed" style="position:relative;top:0">
+   <a class="brand" href="index.html#home" aria-label="Rest and Raw Resort home"><img src="assets/rr-mark.svg" alt="" width="44" height="44"><span class="brand-wordmark">Rest<span>&amp;</span>Raw</span><span class="brand-descriptor">Resort</span></a>
+   <nav class="primary-nav" aria-label="Site navigation" style="position:static;opacity:1;pointer-events:auto;transform:none;padding:0;background:transparent">
+      <a href="index.html#story">Resort</a><a href="index.html#journal">News &amp; Journal</a><a href="#source">Original Report</a>
+   </nav>
+ </header>
+ <section class="doc-hero">
+   <span class="doc-kicker">Technical records / SM3612 Assignment 2 / 08 November 2026</span>
+   <h1>A world built<br>between <em>tides and clouds.</em></h1>
+   <p>Development documentation for Rest&amp;Raw Resort: a fictional two-level Unreal Engine 5.7.4 experience created by HUANG Yifei and ZHAO Xuehan. Systems, architectural evidence and asset provenance are recorded separately from future intentions.</p>
+   <div class="doc-cta"><a href="#source">Read the 26-page illustrated report</a><a href="https://www.canva.com/d/Az1NH0qhPV_I26n" target="_blank" rel="noopener noreferrer">Open original on Canva ↗</a></div>
+ </section>
+ <main class="doc-main" id="doc-main"><div class="doc-content">
+  <nav class="doc-toc" aria-label="On this page"><a href="#overview">Concept</a><a href="#architecture">Build evidence</a><a href="#blueprints">Blueprints</a><a href="#asset-register">Asset register</a><a href="#sources">Sources</a><a href="#source">Original 26 pages</a></nav>
+  <section id="overview" class="doc-section">
+   <span class="doc-label">01 / Overview · Source pages 2–3</span><h2>Two distinct worlds.</h2>
+   <p class="doc-lead">The grounded island resort gives way to an impossible ocean of clouds. The intended player route is arrival, interior discovery, the upstairs bath, then a short cloud-world excursion.</p>
+   <div class="doc-grid">
+     <div class="doc-card"><span class="doc-tag">Grounded resort</span><h3>Material &amp; ritual</h3><p>Skull Island port → lobby → omakase and dining → stairs → 2F bathtub threshold. The ground level is documented, but some spaces remain visibly in progress.</p></div>
+     <div class="doc-card"><span class="doc-tag">Impossible cloud ocean</span><h3>Fog &amp; drifting fish</h3><p><code>LV_CloudWorld</code> combines responsive cloud recycling, local drifting mist and collectable fish. The integrated build restores the cloud and fish systems.</p></div>
+   </div>
+   <div class="doc-note"><strong>Evidence boundary:</strong> The report marks the bathtub portal as <strong>in progress</strong> and the 60-second return as <strong>planned</strong>. The game-instance and timer Blueprint assets appear in the Content Browser, but this report alone does not verify their end-to-end runtime behaviour.</div>
+  </section>
+  <section id="architecture" class="doc-section">
+   <span class="doc-label">02 / Spatial design &amp; assembly · Source pages 4–9, 12, 16–17</span><h2>Evidence from the levels.</h2>
+   <div class="doc-grid">
+     <div class="doc-card"><span class="doc-tag">Pages 4–7</span><h3>Skull Island massing</h3><p>Lit overhead, front, left and right wireframes record the skull-shaped landform, two pools, terrain depth, roof assembly, central resort, port and vegetation. They are combined-level views—not isolated floor plans.</p></div>
+     <div class="doc-card"><span class="doc-tag">Page 8</span><h3>Port arrival</h3><p>Working views verify a boat landing, timber pier and resort entrance. These establish the approach from the water.</p></div>
+     <div class="doc-card"><span class="doc-tag">Pages 9 &amp; 16</span><h3>Cloud and visual tests</h3><p>A side wireframe records cloud-cluster bounds, lights and scene actors. Lit front/left orthographic views record terrain brightness and building silhouette; cloud-material, VFX and audio comparisons require further evidence.</p></div>
+     <div class="doc-card"><span class="doc-tag">Pages 12 &amp; 17</span><h3>Interior and iteration</h3><p>Views show the lobby, omakase counter, open dining and 2F graybox. Stairs establish vertical circulation. A pond landscape replaced the earlier garden concept; lobby and 2F still require refinement.</p></div>
+   </div>
+  </section>
+  <section id="blueprints" class="doc-section">
+    <span class="doc-label">03 / UE 5.7.4 technical systems · Source pages 10–15</span><h2>Blueprint architecture.</h2>
+    <p class="doc-muted">The Content Browser inventory lists the portal, cloud, fish, mist, game-instance and timer assets. The eight named systems below are documented as part of the technical architecture.</p>
+    <div class="doc-system"><div><strong><code>BP_CloudCluster</code></strong><p class="doc-muted">Crossed cloud-card assembly</p></div><span class="doc-status ">Built / tested</span></div>
+<div class="doc-system"><div><strong><code>BP_CloudSpawner</code></strong><p class="doc-muted">Construction Script: cloud clusters; refresh and distance-based repositioning around the player&#39;s facing direction</p></div><span class="doc-status ">Built / tested</span></div>
+<div class="doc-system"><div><strong><code>BP_FootCloudAura</code></strong><p class="doc-muted">Player-following foot-level cloud layer</p></div><span class="doc-status ">Documented system</span></div>
+<div class="doc-system"><div><strong><code>BP_MistPatch</code></strong><p class="doc-muted">Random speed/yaw, continuous local drift, distance-threshold relocation</p></div><span class="doc-status ">Built / tested</span></div>
+<div class="doc-system"><div><strong><code>BP_MistSpawner</code></strong><p class="doc-muted">Creates 10 patches using loop indices 0–9</p></div><span class="doc-status ">Built / tested</span></div>
+<div class="doc-system"><div><strong><code>BP_FishBase</code></strong><p class="doc-muted">Fish motion and touch capture</p></div><span class="doc-status ">Built / tested</span></div>
+<div class="doc-system"><div><strong><code>BP_FishSpawner</code></strong><p class="doc-muted">BeginPlay spawning; RegisterFishCatch increments TotalCaught; SpawnReplacementFish replenishes fish</p></div><span class="doc-status ">Built / tested</span></div>
+<div class="doc-system"><div><strong><code>BP_BathtubPortal</code></strong><p class="doc-muted">Intended transition/return connection between resort and cloud map</p></div><span class="doc-status pending">In progress</span></div>
+    <div class="doc-note"><strong>Timer / persistence:</strong> <code>BP_RRGameInstance</code> and <code>WBP_CloudTimer</code> are present in the documented inventory. The report does not show evidence sufficient to classify the 60-second return as tested. Likewise, final spatial-audio behaviour is not confirmed by the report.</div>
+  </section>
+  <section id="asset-register" class="doc-section">
+    <span class="doc-label">04 / Generated asset provenance · Source pages 18–24 · Audit 06 November 2026</span><h2>AI-assisted model register.</h2>
+    <p class="doc-lead">Seven asset groups (registers A01–A08) document 49 delivered FBX files, covering roof, port, gardens, whale display, lighthouse and Taihu lake stones. Counts describe files and variants, not unique placed instances.</p>
+    <div class="doc-note">All registers flag <strong>AI-assisted geometry / code / material generation</strong> by Codex / OpenAI under user direction. Files are project-generated; no third-party model licence or SPDX licence has been assigned in the report. Delivery manifests, previews and offline checks are <strong>not proof of UE runtime or placement</strong>. Paths below are local delivery references, not public download URLs.</div>
+    <div class="doc-register">
+      <details class="doc-asset"><summary>A01 · Modular roof kit <span>10 FBX · expand ↓</span></summary><div class="doc-asset-body"><p><strong>Modifications:</strong> Roof tile courses, curved eaves, brass trims, UVs and assembly pivots.</p><p><strong>Scene status:</strong> Resort roof system; assembly appears in report. Exact module variants in scene to verify.</p><p><strong>Local delivery:</strong> <code>outputs/SkullIsland_RoofKit/</code></p><table class="doc-file-table"><thead><tr><th>Mesh / FBX</th><th>Triangles</th></tr></thead><tbody><tr><td><code>SM_Roof_Main_40x28</code></td><td>169,052</td></tr><tr><td><code>SM_Roof_Upper_28x18</code></td><td>94,864</td></tr><tr><td><code>SM_Roof_Wing_24x14</code></td><td>73,424</td></tr><tr><td><code>SM_Roof_Gable_24x14</code></td><td>60,568</td></tr><tr><td><code>SM_Roof_Entry_16x10</code></td><td>49,084</td></tr><tr><td><code>SM_Roof_Pavilion_18x18</code></td><td>69,408</td></tr><tr><td><code>SM_Roof_Pavilion_12x12</code></td><td>44,000</td></tr><tr><td><code>SM_Corridor_Straight_8x8</code></td><td>19,624</td></tr><tr><td><code>SM_Corridor_EndHip_4x8</code></td><td>20,612</td></tr><tr><td><code>SM_Corridor_Cross_8x8</code></td><td>33,936</td></tr></tbody></table></div></details>
+<details class="doc-asset"><summary>A02 · Modular port and enterable hut <span>26 FBX · expand ↓</span></summary><div class="doc-asset-body"><p><strong>Modifications:</strong> Decks, wall modules, door pivots, roof, piles, railings, steps, lamps, props, and segmented UCX.</p><p><strong>Scene status:</strong> Port arrival. FBX colour import reported successful; exact scene module usage to verify.</p><p><strong>Local delivery:</strong> <code>outputs/SkullIsland_HarborKit/</code></p><table class="doc-file-table"><thead><tr><th>Mesh / FBX</th><th>Triangles</th></tr></thead><tbody><tr><td><code>SM_Dock_Deck_4x4</code></td><td>932</td></tr><tr><td><code>SM_Dock_Deck_8x4</code></td><td>932</td></tr><tr><td><code>SM_Dock_Platform_8x8</code></td><td>1,764</td></tr><tr><td><code>SM_Hut_Floor_8x8</code></td><td>1,764</td></tr><tr><td><code>SM_Hut_WallDoor_8m</code></td><td>444</td></tr><tr><td><code>SM_Hut_WallWindow_8m</code></td><td>588</td></tr><tr><td><code>SM_Hut_WallSolid_8m</code></td><td>372</td></tr><tr><td><code>SM_Hut_CornerPost_4m</code></td><td>48</td></tr><tr><td><code>SM_Hut_CeilingBeam_8m</code></td><td>12</td></tr><tr><td><code>SM_Hut_DoorLeaf_1p25m</code></td><td>128</td></tr><tr><td><code>SM_Hut_Roof_10p4x9p6</code></td><td>40,548</td></tr><tr><td><code>SM_Dock_Pile_6m</code></td><td>176</td></tr><tr><td><code>SM_Dock_Railing_4m</code></td><td>108</td></tr><tr><td><code>SM_Dock_EdgeBeam_4m</code></td><td>12</td></tr><tr><td><code>SM_Dock_Ramp_4x4_Rise1m</code></td><td>336</td></tr><tr><td><code>SM_Dock_Stairs_4x2_Rise1m</code></td><td>84</td></tr><tr><td><code>SM_Lantern_Wall_0p6m</code></td><td>108</td></tr><tr><td><code>SM_Lantern_Post_3m</code></td><td>96</td></tr><tr><td><code>SM_Prop_Crate_1p1m</code></td><td>360</td></tr><tr><td><code>SM_Prop_Barrel_0p9m</code></td><td>396</td></tr><tr><td><code>SM_Mooring_Bollard_0p7m</code></td><td>100</td></tr><tr><td><code>SM_Interior_Counter_3m</code></td><td>72</td></tr><tr><td><code>SM_Interior_Bench_2m</code></td><td>48</td></tr><tr><td><code>SM_Harbor_Sign_PORT_3m</code></td><td>336</td></tr><tr><td><code>SM_Harbor_Banner_6m</code></td><td>1,544</td></tr><tr><td><code>SM_Hut_Enterable_8x8</code></td><td>45,508</td></tr></tbody></table></div></details>
+<details class="doc-asset"><summary>A03 · Complete harbour assembly <span>1 FBX · expand ↓</span></summary><div class="doc-asset-body"><p><strong>Modifications:</strong> Dock and hut combined; custom collision preserves interior openings.</p><p><strong>Scene status:</strong> Port / arrival is visible; exact whole-port file match to verify.</p><p><strong>Local delivery:</strong> <code>outputs/SkullIsland_Harbor_Complete/</code></p><table class="doc-file-table"><thead><tr><th>Mesh / FBX</th><th>Triangles</th></tr></thead><tbody><tr><td><code>SM_Harbor_Complete</code></td><td>92,132</td></tr></tbody></table></div></details>
+<details class="doc-asset"><summary>A04 · Chinese garden and karesansui <span>2 FBX · expand ↓</span></summary><div class="doc-asset-body"><p><strong>Modifications:</strong> Two circular assemblies, roughly 19.94 m each; paving, planting, sand/stone relief, and UCX.</p><p><strong>Scene status:</strong> Earlier garden concept; pond replaced garden in current iteration. Final placement to verify.</p><p><strong>Local delivery:</strong> <code>outputs/SkullIsland_Gardens_UE57/</code></p><table class="doc-file-table"><thead><tr><th>Mesh / FBX</th><th>Triangles</th></tr></thead><tbody><tr><td><code>SM_ChineseGarden_Complete</code></td><td>58,276</td></tr><tr><td><code>SM_Karesansui_Complete</code></td><td>237,740</td></tr></tbody></table></div></details>
+<details class="doc-asset"><summary>A05 · Museum whale skeleton display <span>3 FBX · expand ↓</span></summary><div class="doc-asset-body"><p><strong>Modifications:</strong> Original artistic whale skeleton, museum stand, ribs, spine, flippers, PBR, and UCX.</p><p><strong>Scene status:</strong> Lobby display visible; exact variant to verify.</p><p><strong>Local delivery:</strong> <code>outputs/SkullIsland_WhaleDisplay_UE57/</code></p><table class="doc-file-table"><thead><tr><th>Mesh / FBX</th><th>Triangles</th></tr></thead><tbody><tr><td><code>SM_WhaleDisplay_Complete</code></td><td>80,696</td></tr><tr><td><code>SM_WhaleSkeleton_Only</code></td><td>74,884</td></tr><tr><td><code>SM_WhaleStand_Only</code></td><td>5,812</td></tr></tbody></table></div></details>
+<details class="doc-asset"><summary>A06 · Standalone harbour lighthouse <span>1 FBX · expand ↓</span></summary><div class="doc-asset-body"><p><strong>Modifications:</strong> Approximately 8.01 × 8.01 × 12.71 m; enterable tower with 52 stair treads, balcony, lantern, tiled roof, PBR, UCX.</p><p><strong>Scene status:</strong> Requested harbour landmark; final placement and runtime to verify.</p><p><strong>Local delivery:</strong> <code>outputs/SkullIsland_Lighthouse_UE57/</code></p><table class="doc-file-table"><thead><tr><th>Mesh / FBX</th><th>Triangles</th></tr></thead><tbody><tr><td><code>SM_Lighthouse_Complete</code></td><td>90,556</td></tr></tbody></table></div></details>
+<details class="doc-asset"><summary>A07–A08 · Taihu lake stones — six forms <span>6 FBX · expand ↓</span></summary><div class="doc-asset-body"><p><strong>Modifications:</strong> Four 2K PBR forms, two 4K PBR detailed forms. Spiral Peak ~6.25 m, Dragon Ridge ~6.98 m. Detailed pair: 850 offline void probes passed.</p><p><strong>Scene status:</strong> Requested lake ornaments and focal stones; placement to verify. Offline checks only.</p><p><strong>Local delivery:</strong> <code>outputs/SkullIsland_TaihuRocks_UE57/ + outputs/SkullIsland_TaihuRocks_Detail_UE57/</code></p><table class="doc-file-table"><thead><tr><th>Mesh / FBX</th><th>Triangles</th></tr></thead><tbody><tr><td><code>SM_Taihu_01_CloudGate</code></td><td>61,002</td></tr><tr><td><code>SM_Taihu_02_SlenderPeak</code></td><td>37,180</td></tr><tr><td><code>SM_Taihu_03_LinglongScreen</code></td><td>52,586</td></tr><tr><td><code>SM_Taihu_04_RecliningWave</code></td><td>44,746</td></tr><tr><td><code>SM_Taihu_05_SpiralPeak</code></td><td>210,990</td></tr><tr><td><code>SM_Taihu_06_DragonRidge</code></td><td>306,632</td></tr></tbody></table></div></details>
+    </div>
+    <p class="doc-footnote">Catalogue figures and assessments are transcribed from the 8 November 2026 Canva documentation. The detailed pair of Taihu stones passed 850 offline void-clearance probes, which does not establish runtime performance in the Unreal project.</p>
+  </section>
+  <section id="sources" class="doc-section">
+    <span class="doc-label">05 / Planned external sources · Source pages 25–26</span><h2>References under review.</h2>
+    <p>These Fab links were recorded during planning. The report does <strong>not</strong> confirm whether they were imported, used in the final scene or licensed for the intended use.</p>
+    <h3>Environment &amp; props</h3><ul class="doc-links"><li><a href="https://www.fab.com/listings/b99b6056-f756-4e3d-891b-3d6f9867d3ba" target="_blank" rel="noopener noreferrer">Animated Low Poly Fish ↗</a> <small>· to verify</small></li><li><a href="https://www.fab.com/listings/24d6dc8f-7a25-4252-b7d3-c46f01c02b04" target="_blank" rel="noopener noreferrer">Shark ↗</a> <small>· to verify</small></li><li><a href="https://www.fab.com/listings/43d4cf15-4f21-4471-8e6d-90bc001d3016" target="_blank" rel="noopener noreferrer">Acacia Board ↗</a> <small>· to verify</small></li><li><a href="https://www.fab.com/listings/b2ead203-d418-464f-b032-891550a03da3" target="_blank" rel="noopener noreferrer">CC0 Knife ↗</a> <small>· to verify</small></li><li><a href="https://www.fab.com/listings/8fa98a61-a4cf-4e20-8984-ada708a4b40e" target="_blank" rel="noopener noreferrer">Japanese Tray ↗</a> <small>· to verify</small></li><li><a href="https://www.fab.com/listings/b3d940ff-0ca0-4f4e-bd9e-fecf78e47157" target="_blank" rel="noopener noreferrer">Bathtub ↗</a> <small>· to verify</small></li><li><a href="https://www.fab.com/listings/6dd5d4e9-7e7d-4322-8522-a631daf8932d" target="_blank" rel="noopener noreferrer">Cloud ↗</a> <small>· to verify</small></li></ul>
+    <h3>VFX &amp; audio candidates</h3><ul class="doc-links"><li><a href="https://www.fab.com/listings/d0fe50c4-6ebe-40d5-b78a-56960832f49e" target="_blank" rel="noopener noreferrer">Candidate 01 ↗</a> <small>· not confirmed</small></li><li><a href="https://www.fab.com/listings/2b923e61-b02d-4cc9-bd0b-b067c9e6056e" target="_blank" rel="noopener noreferrer">Candidate 02 ↗</a> <small>· not confirmed</small></li><li><a href="https://www.fab.com/listings/c00b1073-0f0b-42be-a049-fc4c22d0243f" target="_blank" rel="noopener noreferrer">Candidate 03 ↗</a> <small>· not confirmed</small></li><li><a href="https://www.fab.com/listings/875e3bdb-8e39-444a-94c1-12c4cf1f2ac9" target="_blank" rel="noopener noreferrer">Candidate 04 ↗</a> <small>· not confirmed</small></li><li><a href="https://www.fab.com/listings/41e52f11-7620-464b-b0d6-490260eec914" target="_blank" rel="noopener noreferrer">Candidate 05 ↗</a> <small>· not confirmed</small></li><li><a href="https://www.fab.com/listings/4e6897fd-1073-4875-b896-51477ab7f175" target="_blank" rel="noopener noreferrer">Candidate 06 ↗</a> <small>· not confirmed</small></li><li><a href="https://www.fab.com/listings/8b531a0f-4b55-442c-99a8-aec7c94449a6" target="_blank" rel="noopener noreferrer">Candidate 07 ↗</a> <small>· not confirmed</small></li></ul>
+  </section>
+  <section id="source" class="doc-section">
+    <span class="doc-label">06 / Full visual source · Final submission 8 November 2026</span><h2>The original 26 pages.</h2>
+    <p>The complete Canva report contains wireframes, screenshots, Blueprint diagrams and asset previews referenced above. Use the original deck for visual evidence. This page hosts a searchable, accessible text companion; the illustrated Canva original remains externally hosted.</p>
+    <iframe class="doc-embed" title="Rest and Raw Resort technical documentation — 26-page Canva presentation" loading="lazy" src="https://www.canva.com/design/DAHaPzoWR0w/view?embed" allowfullscreen></iframe>
+    <p class="doc-footnote">If the embedded viewer is unavailable or requires Canva access, <a href="https://www.canva.com/d/Az1NH0qhPV_I26n" target="_blank" rel="noopener noreferrer"><u>open the full 26-page report directly on Canva ↗</u></a>. Viewing depends on the Canva document's sharing permissions.</p>
+  </section>
+ </div></main>
+ <footer class="doc-end"><p>REST&amp;RAW RESORT / Technical Documentation · SM3612 · HUANG Yifei (Peter) &amp; ZHAO Xuehan (Leo) · Final submission: 8 November 2026</p><p>Fictional creative project — not an operating resort. <a href="index.html#journal">Return to the news journal</a> · <a href="index.html#home">Resort homepage</a></p></footer>
+</body></html>
