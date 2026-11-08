@@ -1,42 +1,104 @@
 [
   {
+    "id": "technical-report-2026",
+    "date": "2026-11-08",
+    "dateLabel": "8 November 2026",
+    "status": "completed",
+    "eyebrow": "Behind the scenes / Documentation",
+    "title": "Inside the making of Rest&Raw",
+    "summary": "Our 26-page Unreal Engine 5.7.4 technical report documents island wireframes, interior progress, cloud/mist/fish Blueprints and the provenance of AI-assisted model assets. Browse the illustrated report and accompanying searchable technical notes.",
+    "tags": [
+      "Technical Report",
+      "Blueprints",
+      "Documentation"
+    ],
+    "href": "documentation.html"
+  },
+  {
+    "id": "asset-register-audit",
+    "date": "2026-11-06",
+    "dateLabel": "6 November 2026",
+    "status": "completed",
+    "eyebrow": "Production record",
+    "title": "A documented library of island assets",
+    "summary": "The team audited 49 delivered FBX files across modular roofs, harbour construction, gardens, whale display, lighthouse and Taihu rocks. AI-assisted generation is disclosed; actual scene placement and runtime performance are not implied by delivery alone.",
+    "tags": [
+      "3D Assets",
+      "AI-Assisted",
+      "Audit"
+    ],
+    "href": "documentation.html#asset-register"
+  },
+  {
+    "id": "connected-journey",
+    "date": "2026-11-04",
+    "dateLabel": "4 November 2026",
+    "status": "completed",
+    "eyebrow": "Connected gameplay",
+    "title": "The bathtub opens the cloud world",
+    "summary": "The creators confirm that the bathtub transition, visible 60-second countdown and automatic return to the resort were completed and tested by 4 November. The detailed report preserves an earlier in-progress description.",
+    "tags": [
+      "Portal",
+      "Countdown",
+      "Return flow"
+    ],
+    "href": "documentation.html#blueprints"
+  },
+  {
     "id": "scene-foundation",
     "date": null,
-    "dateLabel": "Date not recorded",
+    "dateLabel": "Before 4 November 2026",
     "status": "completed",
     "eyebrow": "Environment systems",
     "title": "The cloud world takes shape",
     "summary": "Independent UE 5.7.4 scene development established dynamic cloud generation and recycling, a cloud carpet underfoot, and local fog for depth and orientation.",
-    "tags": ["UE 5.7.4", "Environment", "Clouds"]
+    "tags": [
+      "UE 5.7.4",
+      "Environment",
+      "Clouds"
+    ]
   },
   {
     "id": "fish-ecosystem",
     "date": null,
-    "dateLabel": "Date not recorded",
+    "dateLabel": "Before 4 November 2026",
     "status": "completed",
     "eyebrow": "Interaction systems",
     "title": "A self-renewing school of fish",
     "summary": "Fish now roam on random paths, register touch capture and update a count. Automatic replenishment keeps the world populated, while distant fish are recycled for efficiency.",
-    "tags": ["Blueprint", "Interaction", "Fish"]
+    "tags": [
+      "Blueprint",
+      "Interaction",
+      "Fish"
+    ]
   },
   {
     "id": "spatial-audio-interface",
     "date": null,
-    "dateLabel": "Date not recorded",
+    "dateLabel": "Before 4 November 2026",
     "status": "completed",
     "eyebrow": "Spatial audio",
-    "title": "An interface for hearing where fish are",
-    "summary": "A reusable 3D fish-audio component interface is in place, preparing the project for a future listen-and-locate mode without coupling sound logic to one fish Blueprint.",
-    "tags": ["3D Audio", "Components", "Gameplay"]
+    "title": "Spatial fish-audio interface prepared",
+    "summary": "A reusable 3D audio and attenuation interface was added to the fish system before 4 November. Final listen-and-locate playback has not been verified in the technical report.",
+    "tags": [
+      "3D Audio",
+      "Components",
+      "Gameplay"
+    ]
   },
   {
-    "id": "connected-journey",
+    "id": "resort-interior-polish",
     "date": null,
-    "dateLabel": "Planned — date not set",
+    "dateLabel": "In progress · as of 8 November 2026",
     "status": "planned",
-    "eyebrow": "Next threshold",
-    "title": "Connect the island to the cloud ocean",
-    "summary": "The two maps, bathtub portal and one-minute return mechanism remain planned work. They are not yet presented as implemented systems.",
-    "tags": ["Map merge", "Portal", "Return flow"]
+    "eyebrow": "Environment refinement",
+    "title": "Refining the lobby and upper floor",
+    "summary": "The latest report shows the lobby and second-floor areas under construction, with the stair route established and the earlier garden concept replaced by a pond landscape. Final furnishing and visual comparison tests are still to be verified.",
+    "tags": [
+      "Interior",
+      "2F",
+      "Iteration"
+    ],
+    "href": "documentation.html#architecture"
   }
 ]
