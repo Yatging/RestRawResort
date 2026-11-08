@@ -79,6 +79,9 @@ const renderJournal = (filter = "all") => {
     .map((entry) => {
       const tags = entry.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
       const machineDate = entry.date ? ` datetime="${escapeHtml(entry.date)}"` : "";
+      const headline = entry.href
+        ? `<a href="${escapeHtml(entry.href)}">${escapeHtml(entry.title)}</a>`
+        : escapeHtml(entry.title);
       return `
         <article class="journal-entry" data-status="${escapeHtml(entry.status)}">
           <div>
@@ -87,7 +90,7 @@ const renderJournal = (filter = "all") => {
           </div>
           <div>
             <p class="journal-category">${escapeHtml(entry.eyebrow)}</p>
-            <h3>${escapeHtml(entry.title)}</h3>
+            <h3>${headline}</h3>
             <p>${escapeHtml(entry.summary)}</p>
           </div>
           <div class="journal-tags" aria-label="Tags">${tags}</div>
